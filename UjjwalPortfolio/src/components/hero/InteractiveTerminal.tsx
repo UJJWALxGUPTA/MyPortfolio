@@ -123,6 +123,9 @@ export const InteractiveTerminal: React.FC = () => {
   iot               Display Smart Door Lock hardware MFA schematic
   crm               View RealtyFlow multi-tenant lead analytics
   contact           Output contact endpoints & transmission details
+  github            Launch GitHub profile (${PERSONAL_INFO.github})
+  linkedin          Launch LinkedIn profile
+  social            Display social & external network uplinks
   ccna              Display Cisco CCNA certification details & verification
   whoami            Print engineer telemetry & background summary
   ping <host>       Execute simulated ICMP Echo Request
@@ -210,6 +213,46 @@ export const InteractiveTerminal: React.FC = () => {
   LinkedIn: ${PERSONAL_INFO.linkedin}
   GitHub:   ${PERSONAL_INFO.github}
   Ready to receive TCP SYN packets below.`
+        };
+        break;
+
+      case 'github':
+        soundManager.playSuccessChime();
+        if (typeof window !== 'undefined') {
+          window.open(PERSONAL_INFO.github, '_blank', 'noopener,noreferrer');
+        }
+        outputLine = {
+          id: (Date.now() + 1).toString(),
+          type: 'success',
+          content: `[UPLINK ESTABLISHED]
+  Platform: GitHub Profile
+  URL:      ${PERSONAL_INFO.github}
+  Redirecting in new browser tab...`
+        };
+        break;
+
+      case 'linkedin':
+        soundManager.playSuccessChime();
+        if (typeof window !== 'undefined') {
+          window.open(PERSONAL_INFO.linkedin, '_blank', 'noopener,noreferrer');
+        }
+        outputLine = {
+          id: (Date.now() + 1).toString(),
+          type: 'success',
+          content: `[UPLINK ESTABLISHED]
+  Platform: LinkedIn Profile
+  URL:      ${PERSONAL_INFO.linkedin}
+  Redirecting in new browser tab...`
+        };
+        break;
+
+      case 'social':
+        outputLine = {
+          id: (Date.now() + 1).toString(),
+          type: 'output',
+          content: `PROFESSIONAL NETWORK UPLINKS:
+  GitHub:   ${PERSONAL_INFO.github}
+  LinkedIn: ${PERSONAL_INFO.linkedin}`
         };
         break;
 

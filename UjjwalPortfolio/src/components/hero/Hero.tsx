@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { Network, Terminal, Shield, ArrowRight, Download, Send, Radio, Server, Cpu, Layers } from 'lucide-react';
+import { GithubIcon, LinkedinIcon } from '../ui/BrandIcons';
 import { soundManager } from '../../utils/sound';
 import { PERSONAL_INFO, QUICK_BADGES } from '../../data/portfolioData';
 import { InteractiveTerminal } from './InteractiveTerminal';
@@ -174,6 +175,34 @@ export const Hero: React.FC<HeroProps> = ({ onOpenResumeModal, onOpenVerifyModal
                 <Download className="w-3.5 h-3.5 text-crimson" />
                 <span>Extract Resume (PDF)</span>
               </button>
+
+              {/* Social Uplinks: GitHub & LinkedIn */}
+              <div className="flex items-center space-x-2">
+                <a
+                  href={PERSONAL_INFO.github}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  onClick={() => soundManager.playKeyClick()}
+                  className="flex items-center space-x-1.5 px-3 py-2.5 rounded-lg bg-obsidian-850 hover:bg-obsidian-800 text-slate-300 hover:text-white border border-slate-800 hover:border-crimson font-mono text-xs transition-all shadow-sm"
+                  title="GitHub: https://github.com/UJJWALxGUPTA"
+                  aria-label="GitHub Profile"
+                >
+                  <GithubIcon className="w-4 h-4 text-crimson" />
+                  <span className="hidden sm:inline">GitHub</span>
+                </a>
+                <a
+                  href={PERSONAL_INFO.linkedin}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  onClick={() => soundManager.playKeyClick()}
+                  className="flex items-center space-x-1.5 px-3 py-2.5 rounded-lg bg-obsidian-850 hover:bg-obsidian-800 text-slate-300 hover:text-white border border-slate-800 hover:border-crimson font-mono text-xs transition-all shadow-sm"
+                  title="LinkedIn Profile"
+                  aria-label="LinkedIn Profile"
+                >
+                  <LinkedinIcon className="w-4 h-4 text-crimson" />
+                  <span className="hidden sm:inline">LinkedIn</span>
+                </a>
+              </div>
             </div>
 
             {/* Quick Terminal Meta line */}

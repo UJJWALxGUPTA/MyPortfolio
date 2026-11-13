@@ -1,32 +1,34 @@
-# React + TypeScript + Vite
+# Ujjwal Gupta - Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+> Full-Stack Software Developer | Cisco Certified Network Associate (CCNA) | Distributed Kafka & Embedded Systems Engineer
 
-Currently, two official plugins are available:
+[![GitHub](https://img.shields.io/badge/GitHub-UJJWALxGUPTA-181717?style=flat&logo=github)](https://github.com/UJJWALxGUPTA)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Ujjwal%20Gupta-0A66C2?style=flat&logo=linkedin)](https://www.linkedin.com/in/ujjwal-gupta-984602317/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🌐 Uplinks & Profiles
 
-## React Compiler
+- **GitHub Profile**: [https://github.com/UJJWALxGUPTA](https://github.com/UJJWALxGUPTA)
+- **LinkedIn Profile**: [https://www.linkedin.com/in/ujjwal-gupta-984602317/](https://www.linkedin.com/in/ujjwal-gupta-984602317/)
+- **Email**: ujjwalxgupta16@gmail.com
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the Oxlint configuration
+## 🛠️ Tech Stack & Systems
 
-If you are developing a production application, we recommend enabling type-aware lint rules by installing `oxlint-tsgolint` and editing `.oxlintrc.json`:
+- **Frontend**: React 19, TypeScript, Tailwind CSS, Framer Motion, Canvas Confetti
+- **Networking & Infrastructure**: Cisco CCNA (200-301), OSPF Area 0, 802.1Q VLAN Trunks, Extended ACLs, NAT/PAT, Linux Essentials
+- **Distributed Backend**: Apache Kafka Event Streams, WebSockets (RFC 6455), Node.js, Express.js, MongoDB
+- **Embedded & Hardware**: Arduino, STM32, RFID (MFRC522), DM542 Stepper Drivers, Ki-Cad PCB Layout
 
-```json
-{
-  "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "plugins": ["react", "typescript", "oxc"],
-  "options": {
-    "typeAware": true
-  },
-  "rules": {
-    "react/rules-of-hooks": "error",
-    "react/only-export-components": ["warn", { "allowConstantExport": true }]
-  }
-}
+## 🚀 Development & Build
+
+```bash
+# Install dependencies
+npm install
+
+# Start development server
+npm run dev
+
+# Production build
+npm run build
 ```
-
-See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.

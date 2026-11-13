@@ -1,5 +1,6 @@
 import React from 'react';
 import { Terminal, ArrowUp } from 'lucide-react';
+import { GithubIcon, LinkedinIcon } from '../ui/BrandIcons';
 import { PERSONAL_INFO } from '../../data/portfolioData';
 import { soundManager } from '../../utils/sound';
 
@@ -34,6 +35,30 @@ export const Footer: React.FC<FooterProps> = ({ onOpenResumeModal, onOpenVerifyM
 
           {/* Quick Actions */}
           <div className="flex flex-wrap items-center justify-center gap-3">
+            <a
+              href={PERSONAL_INFO.github}
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={() => soundManager.playKeyClick()}
+              className="flex items-center space-x-1.5 px-3 py-1.5 rounded-lg bg-obsidian-900 hover:bg-obsidian-800 text-slate-300 hover:text-white border border-slate-800 hover:border-crimson text-[11px] transition-colors shadow-sm"
+              title="GitHub Profile (UJJWALxGUPTA)"
+            >
+              <GithubIcon className="w-3.5 h-3.5 text-crimson" />
+              <span>GitHub</span>
+            </a>
+
+            <a
+              href={PERSONAL_INFO.linkedin}
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={() => soundManager.playKeyClick()}
+              className="flex items-center space-x-1.5 px-3 py-1.5 rounded-lg bg-obsidian-900 hover:bg-obsidian-800 text-slate-300 hover:text-white border border-slate-800 hover:border-crimson text-[11px] transition-colors shadow-sm"
+              title="LinkedIn Profile"
+            >
+              <LinkedinIcon className="w-3.5 h-3.5 text-crimson" />
+              <span>LinkedIn</span>
+            </a>
+
             <button
               onClick={() => {
                 soundManager.playKeyClick();

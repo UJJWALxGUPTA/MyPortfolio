@@ -14,8 +14,8 @@ export const PERSONAL_INFO = {
   email: 'ujjwalxgupta16@gmail.com',
   phone: '+91 7304693409',
   location: 'Mumbai, Maharashtra, India',
-  github: 'https://github.com/ujjwalgupta-net',
-  linkedin: 'https://linkedin.com/in/ujjwal-gupta-ccna',
+  github: 'https://github.com/UJJWALxGUPTA',
+  linkedin: 'https://www.linkedin.com/in/ujjwal-gupta-984602317/',
   status: 'ONLINE // ACCEPTING TRAFFIC',
   gatewayIp: '192.168.1.1',
   asn: 'AS65001',
@@ -326,7 +326,7 @@ export const FEATURED_PROJECTS: ProjectItem[] = [
     techStack: ['React.js', 'Node.js', 'Express.js', 'MongoDB', 'Tailwind CSS', 'JWT Auth', 'RESTful API'],
     interactiveType: 'crm_analytics',
     simulationAvailable: true,
-    githubUrl: 'https://github.com/ujjwalgupta-net/realtyflow-crm',
+    githubUrl: 'https://github.com/UJJWALxGUPTA',
     metrics: [
       { label: 'Lead Velocity', value: '10k+ Req/s' },
       { label: 'Architecture', value: 'Multi-Tenant' },
@@ -351,7 +351,7 @@ export const FEATURED_PROJECTS: ProjectItem[] = [
     techStack: ['Apache Kafka', 'Node.js', 'WebSockets (ws)', 'MongoDB', 'Express.js', 'Docker', 'Event-Driven'],
     interactiveType: 'kafka_stream',
     simulationAvailable: true,
-    githubUrl: 'https://github.com/ujjwalgupta-net/kafkachat-engine',
+    githubUrl: 'https://github.com/UJJWALxGUPTA',
     metrics: [
       { label: 'Throughput', value: '50k+ Msg/sec' },
       { label: 'Kafka Partitions', value: '3 Active Brokers' },
@@ -403,7 +403,7 @@ export const FEATURED_PROJECTS: ProjectItem[] = [
     techStack: ['Arduino', 'RFID (MFRC522)', 'Matrix Keypad (4x4)', '12V Solenoid', 'Optocoupler Relay', 'C/C++', 'SPI Bus'],
     interactiveType: 'iot_schematic',
     simulationAvailable: true,
-    githubUrl: 'https://github.com/ujjwalgupta-net/arduino-smart-lock',
+    githubUrl: 'https://github.com/UJJWALxGUPTA',
     metrics: [
       { label: 'Auth Pipeline', value: 'MFA (RFID + PIN)' },
       { label: 'Relay Latch Time', value: '<150 ms' },
@@ -427,7 +427,7 @@ export const FEATURED_PROJECTS: ProjectItem[] = [
     ],
     techStack: ['React.js', 'Node.js', 'Express.js', 'MongoDB', 'Razorpay Webhooks', 'REST API', 'JWT Authentication', 'Tailwind CSS'],
     simulationAvailable: false,
-    githubUrl: 'https://github.com/ujjwalgupta-net/digi-dine',
+    githubUrl: 'https://github.com/UJJWALxGUPTA/DigiDine',
     metrics: [
       { label: 'Order Processing', value: '<45 ms' },
       { label: 'Peak Concurrency', value: '500+ Req/min' },
@@ -452,7 +452,7 @@ export const FEATURED_PROJECTS: ProjectItem[] = [
     techStack: ['Java', 'MySQL', 'JDBC Connection Pooling', 'Java Swing', 'OOP Design', 'Jasper Reports'],
     interactiveType: 'room_matrix',
     simulationAvailable: true,
-    githubUrl: 'https://github.com/ujjwalgupta-net/hotel-management-java',
+    githubUrl: 'https://github.com/UJJWALxGUPTA',
     metrics: [
       { label: 'Data Integrity', value: '100% ACID' },
       { label: 'GUI Framework', value: 'Java Swing' },
@@ -477,7 +477,7 @@ export const FEATURED_PROJECTS: ProjectItem[] = [
     techStack: ['Python', 'Pygame', 'OOP Architecture', 'Vector Physics', 'FSM State Machine', 'JSON Serialization'],
     interactiveType: 'game_loop',
     simulationAvailable: true,
-    githubUrl: 'https://github.com/ujjwalgupta-net/python-snake-engine',
+    githubUrl: 'https://github.com/UJJWALxGUPTA',
     metrics: [
       { label: 'Frame Rate', value: '60 FPS Fixed' },
       { label: 'Collision Logic', value: 'O(1) Spatial' },

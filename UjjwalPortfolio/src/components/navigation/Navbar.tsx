@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Terminal, Shield, Menu, X, Download, Server, Cpu, Network, Send } from 'lucide-react';
+import { GithubIcon, LinkedinIcon } from '../ui/BrandIcons';
+import { PERSONAL_INFO } from '../../data/portfolioData';
 import { soundManager } from '../../utils/sound';
 
 interface NavbarProps {
@@ -80,8 +82,30 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenResumeModal }) => {
           })}
         </nav>
 
-        {/* Action Button: Terminal Profile / Resume */}
-        <div className="hidden sm:flex items-center space-x-3">
+        {/* Action Button: Terminal Profile / Resume + Uplinks */}
+        <div className="hidden sm:flex items-center space-x-2">
+          <a
+            href={PERSONAL_INFO.github}
+            target="_blank"
+            rel="noopener noreferrer"
+            onClick={() => soundManager.playKeyClick()}
+            className="p-1.5 rounded-lg bg-obsidian-800 hover:bg-obsidian-700 text-slate-300 hover:text-white border border-red-600/30 hover:border-crimson transition-all"
+            title="GitHub: https://github.com/UJJWALxGUPTA"
+            aria-label="GitHub Profile"
+          >
+            <GithubIcon className="w-4 h-4 text-crimson" />
+          </a>
+          <a
+            href={PERSONAL_INFO.linkedin}
+            target="_blank"
+            rel="noopener noreferrer"
+            onClick={() => soundManager.playKeyClick()}
+            className="p-1.5 rounded-lg bg-obsidian-800 hover:bg-obsidian-700 text-slate-300 hover:text-white border border-red-600/30 hover:border-crimson transition-all"
+            title="LinkedIn: https://www.linkedin.com/in/ujjwal-gupta-984602317/"
+            aria-label="LinkedIn Profile"
+          >
+            <LinkedinIcon className="w-4 h-4 text-crimson" />
+          </a>
           <button
             onClick={() => {
               soundManager.playPacketPulse();
@@ -132,7 +156,36 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenResumeModal }) => {
             );
           })}
 
-          <div className="pt-2 border-t border-slate-800">
+          <div className="pt-2 border-t border-slate-800 space-y-2">
+            <div className="flex items-center gap-2">
+              <a
+                href={PERSONAL_INFO.github}
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={() => {
+                  soundManager.playKeyClick();
+                  setMobileMenuOpen(false);
+                }}
+                className="flex-1 flex items-center justify-center space-x-2 px-3 py-2 rounded-lg bg-obsidian-800 text-slate-200 hover:text-white border border-slate-800 hover:border-crimson text-xs font-mono"
+              >
+                <GithubIcon className="w-4 h-4 text-crimson" />
+                <span>GitHub</span>
+              </a>
+              <a
+                href={PERSONAL_INFO.linkedin}
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={() => {
+                  soundManager.playKeyClick();
+                  setMobileMenuOpen(false);
+                }}
+                className="flex-1 flex items-center justify-center space-x-2 px-3 py-2 rounded-lg bg-obsidian-800 text-slate-200 hover:text-white border border-slate-800 hover:border-crimson text-xs font-mono"
+              >
+                <LinkedinIcon className="w-4 h-4 text-crimson" />
+                <span>LinkedIn</span>
+              </a>
+            </div>
+
             <button
               onClick={() => {
                 soundManager.playPacketPulse();
